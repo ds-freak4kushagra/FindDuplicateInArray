@@ -1,1 +1,1 @@
-# FindDuplicateInArray
+# Find Duplicate In Array
