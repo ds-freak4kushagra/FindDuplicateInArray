@@ -1,0 +1,22 @@
+void countDuplicate(int *A, int n)
+{
+  int i,lastDuplicate=A[0],j;
+  for(i=0;i<n-1;i++)
+  {
+    if(A[i] == A[i+1] && A[i] != lastDuplicate)
+    {
+      lastDuplicate = A[i];
+      j = i;
+      while(A[i] == A[j])
+      {
+        j++;
+      }
+
+      printf("Duplicate element is %d \t",A[i]);
+      printf("Frequency of Element is %d \n",j-i);
+      
+      i = j-1;
+
+    }
+  }
+}
